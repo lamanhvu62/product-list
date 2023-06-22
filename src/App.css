@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +39,37 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul li {
+  width: calc(100% / 3 - 20px);
+  background-color: #ddd;
+  border: 1px solid #282c34;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+input {
+  padding: 5px;
+  border-radius: 10px;
+  width: 400px;
+  height: 40px;
+  display: block;
+  border: 1px solid #ddd;
+}
+
+.box-search {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 16px 0;
 }
